@@ -10,6 +10,10 @@ header {
 	margin-bottom: calc(26vh + 100px);
 }
 
+@keyframes flicker {
+	50% {border-right-color: transparent;}
+}
+
 header>div {
 	background: black;
 	height: 20vh;
@@ -43,6 +47,7 @@ header main div:first-child {
 	color: white;
 	font-family: Asap, sans-serif;
 }
+
 
 header main div:first-child p::selection {
 	color: black;
