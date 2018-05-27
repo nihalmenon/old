@@ -21,10 +21,9 @@ header>div {
 }
 
 header main {
-	height: 40vh;
 	width: 80vw;
 	max-width: 750px;
-	background: white;
+	background: black;
 	box-shadow: 2px 2px 3px rgba(0,0,0,.2), -2px -2px 3px rgba(0,0,0,.2), 2px -2px 3px rgba(0,0,0,.2), -2px 2px 3px rgba(0,0,0,.2);
 	position: absolute;
 	left: 0;
@@ -32,6 +31,8 @@ header main {
 	top: 0;
 	margin: 6vh auto;
 	border: 1px solid white;
+	display: flex;
+	padding-bottom: 12px;
 }
 
 header main div:first-child {
@@ -39,8 +40,6 @@ header main div:first-child {
 	padding: 20px;
 	display: inline-block;
 	width: 70%;
-	height: 100%;
-	background: black;
 	color: white;
 	font-family: Asap, sans-serif;
 }
@@ -81,16 +80,15 @@ header main div p {
 
 header main div:nth-child(2) {
 	float: right;
-	width: 30%;
-	height: 100%;
 	color: white;
-	background: black;
+	width: 30%;
+	margin: auto;
 }
 
 header main div:nth-child(2) img {
 	width: 70%;
+	margin: auto;
 	display: block;
-	margin: calc(25vh / 2) auto;
 }
 
 .sectionTitle {
