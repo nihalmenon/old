@@ -7,7 +7,7 @@ body {
 
 header {
 	position: relative;
-	margin-bottom: calc(26vh + 50px);
+	margin-bottom: calc(26vh + 100px);
 }
 
 header>div {
