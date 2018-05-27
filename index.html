@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="img/logo.png">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Nihal Menon</title>
+</head>
+<body>
+	<header>
+		<div></div>
+		<main>
+			<div>
+				<h1 id="name"></h1>
+				<h2>Front End Developer</h2>
+				<h4>About Me: </h4>
+				<p>I am a technology enthusiast who has been programming for a year. I have learned HTML, CSS, and JavaScript and I am trying to become better at web development. I am currently a front end developer @Xeleration. </p>
+				<span><a href="https://www.instagram.com/nihalmenon24/"><span class="fa fa-instagram"></span></a> 
+				<a href="https://github.com/nihalmenon/"><span class="fa fa-github"></span></a> 
+				<a href="mailto:nihaljmenon@hotmail.com"><span class="fa fa-envelope"></span></a></span>
+			</div>
+			<div><img src="img/logo.png"></div>
+		</main>
+	</header>
+	<main>
+		<section class="sectionTitle" id="about">
+			<h1>Who am I?</h1>
+		</section>
+		<section id="aboutme">
+			<h1>I'm Nihal</h1>
+			<h3>14 Years Old</h3>
+			<div>I've always been interested in technology and this year I decided to do something with my interest. I began to learn HTML, CSS and JavaScript to start making websites. My first website was something as simple as a clickcounter. I then started to try and make more complex things like <a href="https://nihalmenon.com/converter/">currency</a> and <a href="https://nihalmenon.com/massconverter/">mass</a> converters. I then decided I had to make something that will be more useful to everyone. So, I made <a href="https://nihalmenon.com/never4get/">never4get</a> which is a website to help people organize all the things they have to do. </div>
+		</section>
+		<section class="sectionTitle" id="projects">
+			<h1>Projects</h1>
+		</section>
+		<section id="never4get">
+			<h1>never4get</h1>
+			<h3>Todo List Manager</h3>
+			<div>A simple website that helps you organize all the things you have to do. With an easy to use interface, you can reorder, rename, delete, and check items off as you complete all of your tasks. </div>
+			<a href="https://nihalmenon.com/never4get/"><img src="img/never4get.png"></a>
+			<p><i>Get things done</i></p>
+		</section>
+		<section id="snake">
+			<h1>Snake Game</h1>
+			<h3>Simple Retro Snake Game</h3>
+			<div>Maneuver around the retro map and navigate to food in order to get longer and increase your score. How long can you last?</div>
+			<a href="https://nihalmenon.com/snake/"><img src="img/snake.png"></a>
+			<p><i>Take a break</i></p>
+		</section>
+		<section id="tipcalculator">
+			<h1>Tip Calculator</h1>
+			<h3>Dine-out tool</h3>
+			<div>This interactive calculator will help you calculate the tip with adjustable tip percentages, bill, and amount of people footing the bill. No point in wasting time calculating the tip. Just use tip calculator!</div>
+			<a href="https://nihalmenon.com/tipcalculator/"><img src="img/tipCalculator.png"></a>
+			<p><i>Don't waste time</i></p>
+		</section>
+		<section id="massconverter">
+			<h1>Mass Converter</h1>
+			<h3>Conversion Tool</h3>
+			<div>This tool converts mass/force between Newtons, Kilograms and Pounds. This useful tool will save you the trouble of calculating and can be used in your daily life. </div>
+			<a href="https://nihalmenon.com/massconverter/"><img src="img/massConverter.png"></a>
+			<p><i>Quick calculations</i></p>
+		</section>
+		<section class="sectionTitle" id="contactSection">
+			<h1>Contact Me</h1>
+		</section>
+		<section id="contact">
+			<h1>Need to get in touch?</h1>
+			<div>If you have any questions contact me at my email nihaljmenon@hotmail.com</div>
+			<span><a href="https://www.instagram.com/nihalmenon24/"><span class="fa fa-instagram"></span></a> 
+			<a href="https://github.com/nihalmenon/"><span class="fa fa-github"></span></a> 
+			<a href="mailto:nihaljmenon@hotmail.com"><span class="fa fa-envelope"></span></a></span>
+		</section>
+	</main>
+	<footer>Copyright &copy; <script>document.write(new Date().getFullYear())</script> <a href="https://nihalmenon.com">Nihal Menon</a></footer>
+
+	<script>
+		var i = 0;
+		var txt = 'Hello, I am Nihal Menon!';
+		var speed = 110;
+
+		 document.addEventListener("DOMContentLoaded", function typeWriter(){
+			if (i < txt.length) {
+				document.getElementById("name").innerHTML += txt.charAt(i);
+				i++;
+				setTimeout(typeWriter, speed);
+			}
+		})
+	</script>
+</body>
+</html>
