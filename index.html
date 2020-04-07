@@ -3,6 +3,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="icon" href="img/logo.png">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<meta name="description" content="I'm Nihal Menon. I am a technology enthusiast who has been programming for a year. I have learned HTML, CSS, and JavaScript and I am trying to become better at web development. I am currently a front end developer @Xeleration." >
@@ -30,18 +31,18 @@
 		</main>
 	</header>
 	<main>
-		<section class="sectionTitle" id="about">
+		<section class="sectionTitle" id="about" data-aos="zoom-in">
 			<h1>Who am I?</h1>
 		</section>
-		<section id="aboutme">
+		<section id="aboutme" data-aos="fade-left">
 			<h1>I'm Nihal</h1>
-			<h3>15 Years Old</h3>
+			<h3 id="age">14 Years Old</h3>
 			<div>I've always been interested in technology and this year I decided to do something with my interest. I began to learn HTML, CSS and JavaScript to start making websites. My first website was something as simple as a clickcounter. I then started to try and make more complex things like <a href="https://nihalmenon.com/converter/">currency</a> and <a href="https://nihalmenon.com/massconverter/">mass</a> converters. Next, decided I had to make something that will be more useful to everyone. So, I made <a href="https://nihalmenon.com/never4get/">never4get</a> which is a website to help people organize all the things they have to do. </div>
 		</section>
-		<section class="sectionTitle" id="projects">
+		<section class="sectionTitle" id="projects" >
 			<h1>Projects</h1>
 		</section>
-		<section id="trivia">
+		<section id="trivia" data-aos="fade-left">
 			<h1>Trivia Game</h1>
 			<h3>Test your random knowledge</h3>
 			<div>A fun trivia game that gathers questions from random sources to test your knowledge in different subjects.</div>
@@ -55,42 +56,42 @@
 			<a href="https://nihalmenon.com/never4get/"><img src="img/never4get.png"></a>
 			<p><i>Get things done</i></p>
 		</section>
-		<section id="weather">
+		<section id="weather" data-aos="fade-left">
 			<h1>Weather Scraper</h1>
 			<h3>What's it like out there</h3>
 			<div>A website that will give accurate relevant information regarding a specific city using a reliable API. </div>
 			<a href="http://nihalmenonhosting-com.stackstaging.com/content/api/weather/index.php"><img src="img/weather.png"></a>
 			<p><i>Do I need an umbrella today</i></p>
 		</section>
-		<section id="reactions">
-			<h1>Reaction Tester/h1>
+		<section id="reactions" data-aos="fade-left">
+			<h1>Reaction Tester</h1>
 			<h3>How fast are you</h3>
 			<div>A fun way to test your reactions by clicking the differenct circles that appear on the screen. </div>
 			<a href="http://nihalmenon.com/reactiontester"><img src="img/reactiontester"></a>
 			<p><i>Stay Sharp</i></p>
 		</section>
-		<section id="secretdiary">
+		<section id="secretdiary" data-aos="fade-left">
 			<h1>Secret Diary</h1>
 			<h3>Keep Your Thoughts Safe</h3>
 			<div>A website with a secure login system to keep the information you type private. It is safe, fun, and useful for storing the things you want to keep safe. Made as a challenge for the complete web developer udemy course.</div>
 			<a href="http://nihalmenonhosting-com.stackstaging.com/content/mysql/secretdiary/"><img src="img/secretdiary.png"></a>
 			<p><i>Just for you</i></p>
 		</section>
-		<section id="snake">
+		<section id="snake" data-aos="fade-left">
 			<h1>Snake Game</h1>
 			<h3>Simple Retro Snake Game</h3>
 			<div>Maneuver around the retro map and navigate to food in order to get longer and increase your score. How long can you last?</div>
 			<a href="https://nihalmenon.com/snake/"><img src="img/snake.png"></a>
 			<p><i>Take a break</i></p>
 		</section>
-		<section id="tipcalculator">
+		<section id="tipcalculator" data-aos="fade-left">
 			<h1>Tip Calculator</h1>
 			<h3>Dine-out tool</h3>
 			<div>This interactive calculator will help you calculate the tip with adjustable tip percentages, bill, and amount of people footing the bill. No point in wasting time calculating the tip. Just use tip calculator!</div>
 			<a href="https://nihalmenon.com/tipcalculator/"><img src="img/tipCalculator.png"></a>
 			<p><i>Don't waste time</i></p>
 		</section>
-		<section id="massconverter">
+		<section id="massconverter" data-aos="fade-left">
 			<h1>Mass Converter</h1>
 			<h3>Conversion Tool</h3>
 			<div>This tool converts mass/force between Newtons, Kilograms and Pounds. This useful tool will save you the trouble of calculating and can be used in your daily life. </div>
@@ -100,7 +101,7 @@
 		<section class="sectionTitle" id="contactSection">
 			<h1>Contact Me</h1>
 		</section>
-		<section id="contact">
+		<section id="contact" data-aos="fade-left">
 			<h1>Need to get in touch?</h1>
 			<div>If you have any questions contact me at my email nihaljmenon@hotmail.com</div>
 			<span><a href="https://www.instagram.com/nihalmenon24/"><span class="fa fa-instagram"></span></a> 
@@ -109,8 +110,11 @@
 		</section>
 	</main>
 	<footer>Copyright &copy; <script>document.write(new Date().getFullYear())</script> <a href="https://nihalmenon.com">Nihal Menon</a></footer>
-
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script>
+		AOS.init({
+			duration: 1200,
+		});
 		var i = 0;
 		var txt = 'Hello, I am Nihal Menon!';
 		var speed = 110;
