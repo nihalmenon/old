@@ -6,12 +6,22 @@ body {
 }
 
 header {
-	padding-top: 6vh;
-	background: linear-gradient(180deg, #000 50%, transparent 50%);
+	position: relative;
+	margin-bottom: calc(26vh + 100px);
 }
 
 @keyframes flicker {
 	50% {border-right-color: transparent;}
+}
+
+header>div {
+	background: black;
+	height: 20vh;
+}
+
+::selection {
+	color: black;
+	background: yellow;
 }
 
 header main {
@@ -19,13 +29,17 @@ header main {
 	max-width: 750px;
 	background: black;
 	box-shadow: 2px 2px 3px rgba(0,0,0,.2), -2px -2px 3px rgba(0,0,0,.2), 2px -2px 3px rgba(0,0,0,.2), -2px 2px 3px rgba(0,0,0,.2);
-
-	margin: 0 auto;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	margin: 6vh auto;
 	border: 1px solid white;
 	display: flex;
+	padding-bottom: 12px;
 }
 
-header div:first-child {
+header main div:first-child {
 	box-sizing: border-box;
 	padding: 20px;
 	display: inline-block;
@@ -34,7 +48,7 @@ header div:first-child {
 	font-family: Asap, sans-serif;
 }
 
-header div:first-child span {
+header main div:first-child span {
 	margin: 7px 0px 6px 10px;
 	color: white;
 	font-size: 24px;
@@ -42,35 +56,35 @@ header div:first-child span {
 	-webkit-transition: .2s;
 }
 
-header div:first-child span:hover {
+header main div:first-child span:hover {
 	color: #555;
 }
 
-header div h1 {
+header main div h1 {
 	margin: 10px 0 10px 10px;
 }
 
-header div h2 {
+header main div h2 {
 	margin: 5px 0 30px 10px;
 	font-size: 16px;
 }
 
-header div h4 {
+header main div h4 {
 	margin: 7px 0 4px 10px;
 }
 
-header div p {
+header main div p {
 	margin: 10px 0 10px 10px;
 }
 
-header div:nth-child(2) {
+header main div:nth-child(2) {
 	float: right;
 	color: white;
 	width: 30%;
 	margin: auto;
 }
 
-header div:nth-child(2) img {
+header main div:nth-child(2) img {
 	width: 70%;
 	margin: auto;
 	display: block;
@@ -117,6 +131,7 @@ body>main section div a {
 	text-decoration: none;
 	color: #f36262;
 	border-radius: 3px;
+	padding: 2px;
 	transition: .5s;
 	-webkit-transition: .5s;
 }
